@@ -582,7 +582,7 @@
 				}
 
 		}
-		
+
 	#wrapper > * > .inner {
 		width: 100%;
 		max-width: 68em;
@@ -4052,6 +4052,8 @@
 		width: calc(100% - 4rem);
 		max-width: 72rem;
 		z-index: 2;
+		margin-bottom: 120px;
+
 	}
 
 		#footer input, #footer select, #footer textarea {
