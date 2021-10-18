@@ -314,6 +314,41 @@
 		margin-left: 8.33333%;
 	}
 
+	.news_filter_container {
+		border: 1px solid #959695;
+		border-radius: 10px;
+		padding: 10px;
+		margin-bottom: 8px;
+		text-align: left;
+		font-size: 16px;
+		height: 64px;
+		display: -webkit-box;
+		display: -ms-flexbox;
+		display: flex;
+		-webkit-box-align: center;
+		-ms-flex-align: center;
+		align-items: center;
+		-webkit-box-pack: center;
+		-ms-flex-pack: center;
+		justify-content: space-between;
+		-webkit-box-orient: horizontal;
+		-webkit-box-direction: normal;
+		-ms-flex-direction: row;
+		flex-direction: row;
+	}
+
+	/******기사 체크 필터 부분******/
+	/**뉴스, 백신 필터 영역 조정**/
+	form.check_news {
+		width: 640px;
+		float: left;
+		display: inline-block;
+	}
+	form.check_news label {
+		color: #8f8f8f;
+		font-size: 14px;
+	}
+
 .tiles {
 		display: -moz-flex;
 		display: -webkit-flex;
@@ -391,7 +426,6 @@
 					left: 0;
 					width: 100%;
 					height: 100%;
-					background-image: url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='100' height='100' viewBox='0 0 100 100' preserveAspectRatio='none'%3E%3Cstyle%3Eline %7B stroke-width: 0.25px%3B stroke: %23ffffff%3B %7D%3C/style%3E%3Cline x1='0' y1='0' x2='100' y2='100' /%3E%3Cline x1='100' y1='0' x2='0' y2='100' /%3E%3C/svg%3E");
 					background-position: center;
 					background-repeat: no-repeat;
 					background-size: 100% 100%;
