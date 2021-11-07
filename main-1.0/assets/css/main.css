@@ -1663,18 +1663,114 @@ body.is-loading #intro:not(.hidden)+#header+#nav {
   position: relative;
   width: 20%;
   height: 200px;
+  overflow: hidden;
   /* margin-left: 18px; */
   /* margin-top: 20px; */
   /* border: 1px solid black; */
 }
+
+.tile1 :hover{
+  bottom:50px;
+}
+.tile2 :hover{
+  bottom:50px;
+}
+.tile3 :hover{
+  bottom:50px;
+}
+.tile4 :hover{
+  bottom:50px;
+}
+.tile5 :hover{
+  bottom:50px;
+}
+.tile6 :hover{
+bottom:50px;
+}
+.tile7 :hover{
+  bottom:50px;
+}
+.tile8 :hover{
+  bottom:50px;
+}
+.tile9 :hover{
+  bottom:50px;
+}
+.tile10 :hover{
+  bottom:50px;
+}
+.tile11 :hover{
+  bottom:50px;
+}
+.tile12 :hover{
+  bottom:50px;
+}
+.tile13 :hover{
+  bottom:50px;
+}
+.tile14 :hover{
+  bottom:50px;
+}
+.tile15 :hover{
+  bottom:50px;
+}
+.tile16 :hover{
+  bottom:50px;
+}
+.tile17 :hover{
+  bottom:50px;
+}
+.tile18 :hover{
+bottom:50px;
+}
+
 
 img:hover {
   -moz-transform: scale(1.005);
   -webkit-transform: scale(1.005);
   -ms-transform: scale(1.005);
   transform: scale(1.005);
+
 }
 
+.imgDiv{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  z-index: 1;
+  -webkit-transform:all .5s ease;
+  transition: all .5s ease;
+  bottom:0px;
+  overflow: hidden;
+}
+
+.imgDescDiv{
+width: 100%;
+height: 50px;
+padding:10px;
+color:#ffffff;
+background:#000000;
+position: absolute;
+bottom: 0px;
+}
+
+.DescTitle{
+  font-size: 16px;
+  color: #ffffff;
+  position: absolute;
+  margin-top: -10px;
+  /* z-index: 2; */
+}
+.DescDesc{
+  font-size: 8px;
+  color: #ffffff;
+  /* z-index: 2; */
+margin-top:10px;
+margin-right: 10px;
+line-height: normal;
+  position: absolute;
+
+}
 #main {
   background-color: #ffffff;
   position: relative;
@@ -2062,7 +2158,8 @@ img:hover {
   font-size: 0.8rem;
 }
 
-/*generic.html*/
+/*generic.html 제네릭 추가 부분*/
+
 /* Main */
 	.bigbox{
 		width: 1152px;
