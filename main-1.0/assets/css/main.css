@@ -16,6 +16,7 @@ article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, 
 
 body {
   line-height: 1;
+  background-image: url("https://images.unsplash.com/photo-1636282630099-be8da2c17b11?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2574&q=80");
 }
 
 ol, ul {
@@ -1438,7 +1439,7 @@ header.major .date:before, header.major .date:after {
 
 #intro p {
   font-size: 1.25rem;
-  font-style: italic;
+  /* font-style: italic; */
   margin-top: -0.25rem;
   text-align: center;
 }
