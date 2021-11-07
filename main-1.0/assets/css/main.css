@@ -1724,14 +1724,14 @@ bottom:50px;
 bottom:50px;
 }
 
-
+/*
 img:hover {
   -moz-transform: scale(1.005);
   -webkit-transform: scale(1.005);
   -ms-transform: scale(1.005);
   transform: scale(1.005);
 
-}
+} */
 
 .imgDiv{
   width: 100%;
@@ -2161,18 +2161,31 @@ line-height: normal;
 /*generic.html 제네릭 추가 부분*/
 
 /* Main */
-	.bigbox{
+.bigbox{
+  width: 100%;
+  height: 1500px;
+  /* border: 1px solid black; */
+}
+
+	/* .bigbox{
 		width: 1152px;
 		height: 1500px;
-		/* border: 1px solid black; */
-	}
-	.pic{
+
+	} */
+	/* .pic{
 		width: 1020px;
 		height: 500px;
 		margin-left: 0px;
 		margin-top: 0px;
 		border: 1px solid black;
-	}
+
+	} */
+  .pic{
+    display: block;
+    margin :0 auto;
+    width: 100%;
+
+  }
 	/* .nbsp{ */
 
 		/* height: 100px; */
