@@ -286,7 +286,7 @@ hr {
   -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
   -ms-transition: -ms-transform 1s ease, opacity 1s ease;
   transition: transform 1s ease, opacity 1s ease;
-  background: rgba(255, 255, 255, 0.175);
+  background: #749ac9;
   height: 4rem;
   line-height: 4rem;
   margin: -4rem auto 0 auto;
@@ -441,12 +441,12 @@ hr {
 }
 
 #asec{
-width: 50px;
+
 height: 50px;
 }
 
 #desc{
-width: 50px;
+
 height: 50px;
 }
 
@@ -1686,8 +1686,16 @@ body.is-loading #intro:not(.hidden)+#header+#nav {
   border: 1px solid black;
 }
 
-.tiles :after{
-
+.tiles:after{
+  content: "";
+  display: table;
+  clear: both;
+}
+.column{
+  display: none;
+}
+.show {
+  display: block;
 }
 
 .tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9, .tile10, .tile11, .tile12, .tile13, .tile14, .tile15, .tile16, .tile17, .tile18 {
