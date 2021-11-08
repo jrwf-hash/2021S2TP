@@ -3,50 +3,14 @@
 <html>
 
 <head>
-
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no,
   maximum-scale=1.0, minimum-scale=1.0" />
   <link rel="stylesheet" href="assets/css/main.css" />
+
   <noscript>
     <link rel="stylesheet" href="assets/css/noscript.css" />
   </noscript>
-  <script type="text/javascript">
-  filterSelection("all")
-  function filterSelection(c) {
-    var x, i;
-    x = document.getElementsByClassName("column");
-    if (c == "all") c = "";
-    for (i = 0; i < x.length; i++) {
-      w3RemoveClass(x[i], "show");
-      if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
-    }
-  }
-
-  function w3AddClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
-    }
-  }
-
-  function w3RemoveClass(element, name) {
-    var i, arr1, arr2;
-    arr1 = element.className.split(" ");
-    arr2 = name.split(" ");
-    for (i = 0; i < arr2.length; i++) {
-      while (arr1.indexOf(arr2[i]) > -1) {
-        arr1.splice(arr1.indexOf(arr2[i]), 1);
-      }
-    }
-    element.className = arr1.join(" ");
-  }
-
-
-
-  </script>
 </head>
 
 <body class="is-loading">
@@ -69,422 +33,146 @@
     <header id="header">
       <a href="index.html" class="logo">Photographic work</a>
     </header>
-    <nav id="nav">
-      <div id="myBtnContainer">
-        <button class="btn active" onclick="filterSelection('all')"> Show all</button>
-        <button class="btn" onclick="filterSelection('nature')"> Nature</button>
-        <button class="btn" onclick="filterSelection('cars')"> Cars</button>
-        <button class="btn" onclick="filterSelection('people')"> People</button>
-      </div>
-      <!-- <ul class="links">
-        <li class="active"><a href="index.html">모두</a></li>
-        <li><a href="generic.html">풍경</a></li>
-        <li><a href="elements.html">인물</a></li>
-        <li><a href="elements.html">동물</a></li>
-      </ul> -->
-      <ul class="icons">
 
-      </ul>
-    </nav>
+   <div class="filter" style="margin-top:30px;">
+      <a href="#all">ALL</a>
+      <a href="#landscapes">풍경</a>
+      <a href="#food">Food</a>
+      <a href="#animals">Animals</a>
+   </div>
+
 
 
     <!-- Main -->
     <div id="main">
-      <div class="news_vac">
-            <!--뉴스 필터 부분-->
-            <div class="news_filter_container">
-              <!-- <form action="" class="check_news">
-                <label
-                  ><input type="checkbox" name="check" value="JTBC" onclick="oneCheckbox(this)"/>
-                  JTBC</label
-                >
-                <label
-                  ><input type="checkbox" name="check" value="MBC" onclick="oneCheckbox(this)"/>
-                  MBC</label
-                >
-                <label
-                  ><input type="checkbox" name="check" value="YTN" onclick="oneCheckbox(this)"/>
-                  YTN</label
-                >
-                <label
-                  ><input type="checkbox" name="check" value="동아일보" onclick="oneCheckbox(this)"/>
-                  동아일보</label
-                >
-                <label
-                  ><input type="checkbox" name="check" value="조선일보" onclick="oneCheckbox(this)"/>
-                  조선일보</label
-                >
-                <label
-                  ><input
-                    type="checkbox"
-                    name="check"
-                    value="selectall"
-                    onclick="oneCheckbox(this)"
-                    checked="checked"
-                  />
-                  모든기사</label
-                >
-              </form> -->
-              <button id="asec" type="button" name="button"><p>오름차순 정렬</p></button>
-              <button id="desc" type="button" name="button"><p>내림차순 정렬</p></button>
-              <div class="search_wrapper display_flex_center">
 
-
-
-                <input
-                  placeholder="검색하기"
-                  type="search"
-                  class="search"
-                />
-                <span><img src="./images/glasses.png" alt="" /></span>
-              </div>
-            </div>
-          </div>
       <div class="tiles">
+         <div class="gallery">
+            <a href="#1" class="landscapes"><img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80"    width="100px" height="100px" /></a>
+            <a href="#2" class="animals"><img src="https://images.unsplash.com/photo-1636272219619-b4fd3bf253c7?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2000&q=80" width="100px" height="100px" /></a>
+            <a href="#3" class="landscapes"><img src="https://images.unsplash.com/photo-1636207188968-42e64c2b1578?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80"    width="100px" height="100px" /></a>
+            <a href="#4" class="food"><img src="https://images.unsplash.com/photo-1636221576358-46b654027531?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2574&q=80"    width="100px" height="100px" /></a>
+            <a href="#5" class="animals"><img src="https://images.unsplash.com/photo-1529778873920-4da4926a72c2?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=872&q=80"    width="100px" height="100px" /></a>
+            <a href="#6" class="landscapes"><img src="https://images.unsplash.com/photo-1636208522228-1816ea1ad844?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2670&q=80" width="100px" height="100px" /></a>
+            <a href="#7" class="landscapes"><img src="https://images.unsplash.com/photo-1636236918438-6ab41aeeab04?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80"    width="100px" height="100px" /></a>
+            <a href="#8" class="food"><img src="https://images.unsplash.com/photo-1636310794789-123951c0fd58?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2612&q=80"    width="100px" height="100px" /></a>
+            <a href="#9" class="landscapes"><img src="https://images.unsplash.com/photo-1636294144423-9c3e68737e86?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80"    width="100px" height="100px" /></a>
+            <a href="#10" class="animals"><img src="https://images.unsplash.com/photo-1535083783855-76ae62b2914e?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=870&q=80"    width="100px" height="100px" /></a>
+            <a href="#11" class="animals"><img src="https://images.unsplash.com/photo-1568265112889-c9d3fc50a281?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=627&q=80"    width="100px" height="100px" /></a>
+            <a href="#12" class="food"><img src="https://images.unsplash.com/photo-1636277073302-eee456f208a1?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1738&q=80"    width="100px" height="100px" /></a>
+            <a href="#13" class="animals"><img src="https://images.unsplash.com/photo-1589656966895-2f33e7653819?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=1740&q=80"    width="100px" height="100px" /></a>
+            <a href="#14" class="food"><img src="https://images.unsplash.com/photo-1634505983574-5c974bfc0ba6?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80"    width="100px" height="100px" /></a>
+            <a href="#15" class="food"><img src="https://images.unsplash.com/photo-1636242277703-1eb72d0cabcf?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2574&q=80"    width="100px" height="100px" /></a>
+            <a href="#16" class="food"><img src="https://images.unsplash.com/photo-1636220244933-ed4a7b1b4f7c?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=774&q=80"    width="100px" height="100px" /></a>
+            <a href="#17" class="animals"><img src="https://images.unsplash.com/photo-1551946581-f7a62cd2f00b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1740&q=80"    width="100px" height="100px" /></a>
 
-        <div class="tile1 column nature">
-          <a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-          </a>
-        </div>
 
-				<div class="tile2 column nature">
-					<a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="tile3 column cars">
-					<a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-				<div class="tile4">
-					<a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-        <div class="tile5">
-					<a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-        <div class="tile6">
-					<a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-        <div class="tile7">
-					<a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-        <div class="tile8">
-					<a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-        <div class="tile9">
-					<a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-        <div class="tile10">
-					<a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-        <div class="tile11">
-					<a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-        <div class="tile12">
-					<a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-        <div class="tile13">
-					<a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-        <div class="tile14">
-					<a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-        <div class="tile15">
-					<a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-        <div class="tile16">
-					<a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-        <div class="tile17">
-					<a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-        <div class="tile18">
-					<a href="generic.html#start">
-						<span class="imgDiv">
-							<img src="https://images.unsplash.com/photo-1636279246851-c873a2566c16?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2064&q=80" alt="" width=100% height=100% />
-						</span>
-						<div class="imgDescDiv">
-							<h2 class="DescTitle">Magna</h2>
-							<div class="content">
-								<p class="DescDesc">Sed nisl arcu euismod sit amet nisi lorem etiam dolor veroeros et feugiat.</p>
-							</div>
-						</div>
-					</a>
-				</div>
-
-        <!-- <div class="tile2"><img src="https://images.unsplash.com/photo-1635959565667-aeb00a4297ba?ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=2574&q=80" alt="" width=100% height=100% /></div>
-        <div class="tile3"><img src="images/pic03.png" alt="" width=100% height=100% /></div>
-        <div class="tile4"><img src="images/pic04.png" alt="" width=100% height=100% /></div>
-        <div class="tile5"><img src="images/pic05.png" alt="" width=100% height=100% /></div>
-        <div class="tile6"><img src="images/pic06.png" alt="" width=100% height=100% /></div>
-        <div class="tile7"><img src="images/pic07.png" alt="" width=100% height=100% /></div>
-        <div class="tile8"><img src="images/pic08.png" alt="" width=100% height=100% /></div>
-        <div class="tile9"><img src="images/pic09.png" alt="" width=100% height=100% /></div>
-        <div class="tile10"><img src="images/pic10.png" alt="" width=100% height=100% /></div>
-        <div class="tile11"><img src="images/pic11.png" alt="" width=100% height=100% /></div>
-        <div class="tile12"><img src="images/pic12.png" alt="" width=100% height=100% /></div>
-        <div class="tile13"><img src="images/pic13.png" alt="" width=100% height=100% /></div>
-        <div class="tile14"><img src="images/pic14.png" alt="" width=100% height=100% /></div>
-        <div class="tile15"><img src="images/pic15.png" alt="" width=100% height=100% /></div>
-        <div class="tile16"><img src="images/pic16.png" alt="" width=100% height=100% /></div>
-        <div class="tile17"><img src="images/pic17.png" alt="" width=100% height=100% /></div>
-        <div class="tile18"><img src="images/pic18.png" alt="" width=100% height=100% /></div> -->
-        <!-- <div class="tile19"><img src="images/pic19.png" alt="" width=100% height=100%/></div> -->
+         </div>
       </div>
+        <!-- Footer -->
+            <footer>
+               <div class="pagination">
+                 <!--<a href="#" class="previous">Prev</a>-->
+                 <a href="#" class="page active">1</a>
+                 <a href="#" class="page">2</a>
+                 <a href="#" class="page">3</a>
+                 <span class="extra">&hellip;</span>
+                 <a href="#" class="page">8</a>
+                 <a href="#" class="page">9</a>
+                 <a href="#" class="page">10</a>
+                 <a href="#" class="next">Next</a>
+               </div>
+            </footer>
+
+
 
       <!-- Footer -->
-      <footer>
-        <div class="pagination">
-          <!--<a href="#" class="previous">Prev</a>-->
-          <a href="#" class="page active">1</a>
-          <a href="#" class="page">2</a>
-          <a href="#" class="page">3</a>
-          <span class="extra">&hellip;</span>
-          <a href="#" class="page">8</a>
-          <a href="#" class="page">9</a>
-          <a href="#" class="page">10</a>
-          <a href="#" class="next">Next</a>
-        </div>
-      </footer>
-
-    </div>
-
-    <!-- Footer -->
-    <footer id="footer">
-      <section>
-        <form method="post" action="#">
-          <div class="field">
+      <footer id="footer">
+        <section>
+         <form method="post" action="#">
+           <div class="field">
             <label for="name">Name</label>
             <input type="text" name="name" id="name" />
-          </div>
-          <div class="field">
+           </div>
+           <div class="field">
             <label for="email">Email</label>
             <input type="text" name="email" id="email" />
-          </div>
-          <div class="field">
+           </div>
+           <div class="field">
             <label for="message">Message</label>
             <textarea name="message" id="message" rows="3"></textarea>
-          </div>
-          <ul class="actions">
+           </div>
+           <ul class="actions">
             <li><input type="submit" value="Send Message" /></li>
-          </ul>
-        </form>
-      </section>
-      <section class="split contact">
-        <section class="alt">
-          <h3>Address</h3>
-          <p>경기도 성남시 중원구 KR 광명로 377 신구대학교</p>
+           </ul>
+         </form>
         </section>
-        <section>
-          <h3>Phone</h3>
-          <p><a href="#">(000) 000-0000</a></p>
-        </section>
-        <section>
-          <h3>Email</h3>
-          <p><a href="#">info@untitled.tld</a></p>
-        </section>
-        <section>
-          <h3>Social</h3>
-          <ul class="icons alt">
+        <section class="split contact">
+         <section class="alt">
+           <h3>Address</h3>
+           <p>1234 Somewhere Road #87257<br />
+            Nashville, TN 00000-0000</p>
+         </section>
+         <section>
+           <h3>Phone</h3>
+           <p><a href="#">(000) 000-0000</a></p>
+         </section>
+         <section>
+           <h3>Email</h3>
+           <p><a href="#">info@untitled.tld</a></p>
+         </section>
+         <section>
+           <h3>Social</h3>
+           <ul class="icons alt">
             <li><a href="#" class="icon alt fa-twitter"><span class="label">Twitter</span></a></li>
             <li><a href="#" class="icon alt fa-facebook"><span class="label">Facebook</span></a></li>
             <li><a href="#" class="icon alt fa-instagram"><span class="label">Instagram</span></a></li>
             <li><a href="#" class="icon alt fa-github"><span class="label">GitHub</span></a></li>
-          </ul>
+           </ul>
+         </section>
         </section>
-      </section>
-    </footer>
+      </footer>
 
-    <!-- Copyright -->
-    <!-- <div id="copyright"> -->
-    <!-- <ul><li>&copy; Untitled</li><li>Design: <a href="https://html5up.net">HTML5 UP</a></li></ul> -->
-    <!-- </div>
+   </div>
 
-			</div>
+      <!-- Scripts -->
+<script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
+<script>
 
-		<!-- Scripts -->
+$('.filter a').click(function(e) {
+  e.preventDefault();
+  var a = $(this).attr('href');
+  a = a.substr(1);
+  $('.gallery a').each(function() {
+    if (!$(this).hasClass(a) && a != 'all')
+      $(this).addClass('hide');
+    else
+      $(this).removeClass('hide');
+  });
+
+});
+
+$('.gallery a').click(function(e) {
+  e.preventDefault();
+  var $i = $(this);
+  $('.gallery a').not($i).toggleClass('pophide');
+  $i.toggleClass('pop');
+});
+</script>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-36251023-1']);
+  _gaq.push(['_setDomainName', 'jqueryscript.net']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
     <script src="assets/js/jquery.min.js"></script>
     <script src="assets/js/jquery.scrollex.min.js"></script>
     <script src="assets/js/jquery.scrolly.min.js"></script>

@@ -40,15 +40,91 @@ table {
 body {
   -webkit-text-size-adjust: none;
 }
+.filter a {
+  padding: 10px 20px;
+  display: inline-block;
+  color: #003;
+  background: #eee;
+  text-decoration: none;
+  transition: all 0.2s;
+  border-radius: 9px
+}
 
+.filter a:hover { background: #8ad }
+
+.filter {
+  padding: 50px;
+  text-align: center
+}
+
+.gallery a img {
+  width: 100%;
+  height: auto;
+  float: left;
+}
+
+.gallery a {
+  width: 33.33%;
+  transition: all 0.2s;
+  display: block;
+  float: left;
+  opacity: 1;
+  height: auto;
+}
+
+.gallery .hide, .gallery .pophide {
+  width: 0%;
+  opacity: 0;
+  transition: all 0.1s;
+}
+
+.gallery .pop {
+  width: 100%;
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 0 0px 1000px rgba(0,0,0,0.5);
+}
+
+.pop:after {
+  content: "\00D7";
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  color: #333;
+  background: #fff;
+  padding: 10px 15px;
+  border-radius: 50%;
+  opacity: 0.8;
+}
+
+.pop:hover:after { opacity: 1 }
 /* Box Model */
 *, *:before, *:after {
   -moz-box-sizing: border-box;
   -webkit-box-sizing: border-box;
   box-sizing: border-box;
 }
+body {
+  margin: 0;
+  min-height: 1200px;
+  background-color: #fafafa;
+}
 
 /* Basic */
+.btn1 {
+  border: none;
+  outline: none;
+  padding: 12px 16px;
+  background-color: white;
+  cursor: pointer;
+}
+.btn.active {
+  background-color: #666;
+   color: white;
+}
+
+
+
 @-ms-viewport {
   width: device-width;
 }
@@ -286,7 +362,7 @@ hr {
   -webkit-transition: -webkit-transform 1s ease, opacity 1s ease;
   -ms-transition: -ms-transform 1s ease, opacity 1s ease;
   transition: transform 1s ease, opacity 1s ease;
-  background: #749ac9;
+  background: rgba(255, 255, 255, 0.175);
   height: 4rem;
   line-height: 4rem;
   margin: -4rem auto 0 auto;
@@ -420,34 +496,6 @@ hr {
   #nav {
     display: none;
   }
-}
-
-/*검색필터기능*/
-.news_vac{
-  height: 200px;
-}
-.news_filter_container{
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  justify-content: flex-end;
-  align-items: flex-start;
-  flex-basis: auto;
-}
-
-.search{
-  width:200px;
-  height: 50px;
-}
-
-#asec{
-
-height: 50px;
-}
-
-#desc{
-
-height: 50px;
 }
 
 /* Button */
@@ -1676,6 +1724,7 @@ body.is-loading #intro:not(.hidden)+#header+#nav {
     font-size: 1.75rem;
     border-width: 3px !important;
   }
+
 }
 
 /* Main */
@@ -1683,19 +1732,7 @@ body.is-loading #intro:not(.hidden)+#header+#nav {
   /* float:left; */
   width: 100%;
   height: 950px;
-  border: 1px solid black;
-}
-
-.tiles:after{
-  content: "";
-  display: table;
-  clear: both;
-}
-.column{
-  display: none;
-}
-.show {
-  display: block;
+  /* border: 1px solid black; */
 }
 
 .tile1, .tile2, .tile3, .tile4, .tile5, .tile6, .tile7, .tile8, .tile9, .tile10, .tile11, .tile12, .tile13, .tile14, .tile15, .tile16, .tile17, .tile18 {
@@ -2200,6 +2237,7 @@ line-height: normal;
 
 /*generic.html 제네릭 추가 부분*/
 
+/* Main */
 .bigbox{
   width: 100%;
   height: 1800px;
@@ -2246,7 +2284,7 @@ line-height: normal;
    }
    .lopict1{
 
-      width: 820px;
+      width: 70%;
       height: 300px;
       margin-left: 100px;
       margin-top: 100px;
@@ -2270,14 +2308,10 @@ line-height: normal;
       margin-left: 80px;
       margin-top: 100px;
       border: 1px solid black;
+      overflow: scroll;
    }
 }
 @media screen and (max-width: 1000px){
-  .bigbox{
-  width: 100%;
-  height: 1000px;
-  /* border: 1px solid black; */
-}
    .lopict1{
       width: 680px;
       height: 300px;
@@ -2285,6 +2319,11 @@ line-height: normal;
       margin-top: 100px;
       border: 1px solid black;
       overflow: scroll;
+   }
+   .bigbox{
+     width: 100%;
+     height: 1000px;
+     /* border: 1px solid black; */
    }
 }
 @media screen and (max-width: 900px){
@@ -2324,10 +2363,26 @@ line-height: normal;
    }
 }
 @media screen and (max-width: 700px){
+   .bpict1{
+      width: 200px;
+      height: 50px;
+      /* margin-left: 30px; */
+      margin-top: 30px;
+      border: 1px solid black;
+      overflow: scroll;
+   }
+  .spict1,.spict2{
+      width: 100px;
+      height: 30px;
+      /* margin-left: 30px; */
+      margin-top: 20px;
+      border: 1px solid black;
+      overflow: scroll;
+   }
    .lopict1{
       width: 380px;
       height: 300px;
-      margin-left: 20px;
+      /* margin-left: 20px; */
       margin-top: 100px;
       border: 1px solid black;
       overflow: scroll;
@@ -2357,6 +2412,7 @@ line-height: normal;
       overflow: scroll;
    }
 }
+
 
 @media screen and (max-width: 980px) {
   #footer {
