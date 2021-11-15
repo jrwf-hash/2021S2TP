@@ -1,12 +1,11 @@
 @import url(font-awesome.min.css);
-@import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
-
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+KR&display=swap');
 html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
   margin: 0;
   padding: 0;
   border: 0;
   font-size: 100%;
-  font: inherit;
+  font-family: 'Noto Sans KR', sans-serif;
   vertical-align: baseline;
 }
 
@@ -42,11 +41,11 @@ body {
 }
 
 .filter a {
-  margin-top: -100px;
+  margin-top: -60px;
   flex-shrink: 0;
   padding: 10px 20px;
   color: #ffffff;
-  background: #C4C4C4;
+  background: #848484;
   text-decoration: none;
   transition: all 0.2s;
   border-radius: 9px;
@@ -82,7 +81,7 @@ body {
   object-fit: fill;
 }
 
-/* .gallery .hide,
+.gallery .hide,
 .gallery .pophide {
   width: 0%;
   opacity: 0;
@@ -111,7 +110,7 @@ body {
 
 .pop:hover:after {
   opacity: 1
-} */
+}
 
 /* Box Model */
 *, *:before, *:after {
@@ -2288,32 +2287,48 @@ line-height: normal;
    /* } */
    .bpict1{
      display: flex;
+     flex-direction: column;
+     justify-content:space-between;
      flex-shrink: 0;
       width: 100%;
-      height: 100px;
+
       /* margin-left: 50px;
       margin-top: 50px; */
-      border: 1px solid black;
+      /* border: 1px solid black; */
    }
    .spict1,.spict2{
      display: flex;
+     flex-direction: column;
      flex-shrink: 0;
      width: auto;
+
       /* width: 200px;
       height: 50px; */
       /* margin-left: 50px;
       margin-top: 20px; */
-      border: 1px solid black;
+      /* border: 1px solid black; */
    }
    .lopict1{
      display: flex;
      flex-shrink: 0;
      width: auto;
+     height: auto;
       /* width: 70%;
       height: 300px;
       margin-left: 100px;
       margin-top: 100px; */
-      border: 1px solid black;
+      /* border: 1px solid black; */
+   }
+   @media screen and (max-width: 2500px){
+      .lopict1{
+        padding: 10px;
+         /* width: 80%;
+         height: 300px;
+         margin-left: 80px;
+         margin-top: 100px;
+         border: 1px solid black; */
+         overflow: scroll;
+      }
    }
 @media screen and (max-width: 1230px){
    .lopict1{
@@ -2326,16 +2341,7 @@ line-height: normal;
       overflow: scroll;
    }
 }
-@media screen and (max-width: 2500px){
-   .lopict1{
-      width: 80%;
-      height: 300px;
-      margin-left: 80px;
-      margin-top: 100px;
-      border: 1px solid black;
-      overflow: scroll;
-   }
-}
+
 @media screen and (max-width: 1000px){
    .lopict1{
       width: 680px;
