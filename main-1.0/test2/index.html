@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" >
+<head>
+  <meta charset="UTF-8">
+  <title>CodePen - layer-popup</title>
+  <link rel="stylesheet" href="./style.css">
+
+</head>
+<body>
+<!-- partial:index.partial.html -->
+
+<a href="#layer2" class="btn-example">딤처리 팝업레이어 1</a>
+
+<div class="dim-layer">
+    <div class="dimBg"></div>
+    <div id="layer2" class="pop-layer">
+        <div class="pop-container">
+            <div class="pop-conts">
+                <!--content //-->
+				<div class="img">
+					<img src="">
+				</div>
+                <p class="ctxt mb20">Thank you.<br>
+                    Your registration was submitted successfully.<br>
+                    Selected invitees will be notified by e-mail on JANUARY 24th.<br><br>
+                    Hope to see you soon!
+                </p>
+
+                <div class="btn-r">
+                    <a href="#" class="btn-layerClose">Close</a>
+                </div>
+                <!--// content-->
+            </div>
+        </div>
+    </div>
+</div>
+
+<a href="#layer3" class="btn-example">딤처리 팝업레이어 2</a>
+
+    <div id="layer3" class="pop-layer">
+        <div class="pop-container">
+            <div class="pop-conts">
+                <!--content //-->
+            <div class="img">
+               <img src="data:image/png;base64,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"
+               width="80px" height="80px">
+            </div>
+                <p class="ctxt mb20">woojin.<br>
+                    Your registration was submitted successfully.<br>
+                    Selected invitees will be notified by e-mail on JANUARY 24th.<br><br>
+                    Hope to see you soon!
+                </p>
+
+                <div class="btn-r">
+                    <a href="#" class="btn-layerClose">Close</a>
+                </div>
+                <!--// content-->
+            </div>
+        </div>
+</div>
+
+
+
+
+    <a href="#layer4" class="btn-example">딤처리 팝업레이어 3</a>
+    
+    <div id="layer4" class="pop-layer">
+      <div class="pop-container">
+        <div class="pop-conts">
+          <!--content //-->
+        <div class="img">
+          <img src="" width="80px" height="80px">
+        </div>
+          <p class="ctxt mb20">woojin.<br>
+            Your registration was submitted successfully.<br>
+            Selected invitees will be notified by e-mail on JANUARY 24th.<br><br>
+            Hope to see you soon!
+          </p>
+          <div class="btn-r">
+            <a href="#" class="btn-layerClose">Close</a>
+          </div>
+            <!--// content-->
+          </div>
+        </div>
+      </div>
+
+<!-- partial -->
+  <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script><script  src="./script.js"></script>
+
+</body>
+</html>
