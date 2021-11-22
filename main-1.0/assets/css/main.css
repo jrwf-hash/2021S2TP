@@ -364,6 +364,31 @@ hr {
   border-bottom-color: #eeeeee;
 }
 
+
+/*to the top button
+#myBtn
+*/
+#myBtn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 15px;
+  border: none;
+  outline: none;
+  background-color: #3e8e41;
+  color: white;
+  cursor: pointer;
+  padding-top: -5px;
+
+  border-radius: 10px;
+}
+
+#myBtn:hover {
+  background-color: #558e56;
+}
+
 /* Box */
 /* Nav */
 #nav {

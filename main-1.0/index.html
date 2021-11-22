@@ -14,7 +14,7 @@
 </head>
 
 <body class="is-loading">
-
+   <button onclick="topFunction()" id="myBtn" title="Go to top"><p style="color:white;">Top</p></button>
   <!-- Wrapper -->
   <div id="wrapper" class="fade-in">
 
@@ -68,10 +68,13 @@
 
          </div>
       </div>
+
         <!-- Footer -->
-            <footer>
+             <footer>
+
+
+               <!--
                <div class="pagination">
-                 <!--<a href="#" class="previous">Prev</a>-->
                  <a href="#" class="page active">1</a>
                  <a href="#" class="page">2</a>
                  <a href="#" class="page">3</a>
@@ -81,6 +84,7 @@
                  <a href="#" class="page">10</a>
                  <a href="#" class="next">Next</a>
                </div>
+               -->
             </footer>
 
 
@@ -135,6 +139,31 @@
    </div>
 
       <!-- Scripts -->
+      <script type="text/javascript">
+      //Get the button
+    var mybutton = document.getElementById("myBtn");
+
+    // When the user scrolls down 100px from the top of the document, show the button
+    window.onscroll = function() {scrollFunction()};
+
+    function scrollFunction() {
+      if (document.body.scrollTop > 500 || document.documentElement.scrollTop > 500) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
+
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
+    function downFunction() {
+      document.body.scrollTop = 0;
+     document.documentElement.scrollTop = 550;
+    }
+      </script>
 <script src="http://code.jquery.com/jquery-1.12.1.min.js"></script>
 <script>
 
