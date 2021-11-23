@@ -280,144 +280,148 @@ a.btn-layerClose:hover {
 .text {
   position: absolute;
   visibility: hidden;
-  color: red;
+  color: #3E8E41;
   margin-top: 450px;
+  z-index: 10;
 }
 
 .text2 {
   position: absolute;
   visibility: hidden;
-  color: red;
+  color: #3E8E41;
   margin-top: 450px;
   margin-left: 455.06px;
+  z-index: 10;
 }
 
 .text3 {
   position: absolute;
   visibility: hidden;
-  color: red;
+  color: #3E8E41;
   margin-top: 450px;
   margin-left: 910.12px;
+  z-index: 10;
 }
 
 .text4 {
   position: absolute;
   visibility: hidden;
-  color: red;
+  color: #3E8E41;
   margin-top: 950px;
-
+z-index: 10;
 }
 
 .text5 {
   position: absolute;
   visibility: hidden;
-  color: red;
+  color: #3E8E41;
 margin-top: 950px;
   margin-left: 455.06px;
+  z-index: 10;
 }
 
 .text6 {
   position: absolute;
   visibility: hidden;
-  color: red;
+  color: #3E8E41;
   margin-top: 950px;
-  margin-left: 910.12px;
+  margin-left: 910.12px;z-index: 10;
 }
 
 .text7 {
   position: absolute;
   visibility: hidden;
-  color: red;
-  margin-top: 1450px;
+  color: #3E8E41;
+  margin-top: 1450px;z-index: 10;
 
 }
 
 .text8 {
   position: absolute;
   visibility: hidden;
-  color: red;
+  color: #3E8E41;
   margin-top: 1450px;
-  margin-left: 455.06px;
+  margin-left: 455.06px;z-index: 10;
 }
 
 .text9 {
   position: absolute;
   visibility: hidden;
-  color: red;
+  color: #3E8E41;
   margin-top: 1450px;
-  margin-left: 910.12px;
+  margin-left: 910.12px;z-index: 10;
 }
 
 .text10 {
   position: absolute;
   visibility: hidden;
-  color: red;
-  margin-top: 1950px;
+  color: #3E8E41;
+  margin-top: 1950px;z-index: 10;
 
 }
 
 .text11 {
   position: absolute;
   visibility: hidden;
-  color: red;
+  color: #3E8E41;
   margin-top: 1950px;
-  margin-left: 455.06px;
+  margin-left: 455.06px;z-index: 10;
 }
 
 .text12 {
   position: absolute;
   visibility: hidden;
-  color: red;
+  color: #3E8E41;
   margin-top: 1950px;
-margin-left: 910.12px;
+margin-left: 910.12px;z-index: 10;
 }
 
 .text13 {
   position: absolute;
   visibility: hidden;
-  color: red;
-  margin-top: 2450px;
+  color: #3E8E41;
+  margin-top: 2450px;z-index: 10;
 
 }
 
 .text14 {
   position: absolute;
   visibility: hidden;
-  color: red;
+  color: #3E8E41;
   margin-top: 2450px;
-  margin-left: 455.06px;
+  margin-left: 455.06px;z-index: 10;
 }
 
 .text15 {
   position: absolute;
   visibility: hidden;
-  color: red;
+  color: #3E8E41;
   margin-top: 2450px;
-  margin-left: 910.12px;
+  margin-left: 910.12px;z-index: 10;
 }
 
 .text16 {
   position: absolute;
   visibility: hidden;
-  color: red;
-  margin-top: 2950px;
+  color: #3E8E41;
+  margin-top: 2950px;z-index: 10;
 
 }
 
 .text17 {
   position: absolute;
   visibility: hidden;
-  color: red;
+  color: #3E8E41;
   margin-top: 2950px;
-  margin-left: 455.06px;
+  margin-left: 455.06px;z-index: 10;
 }
 
 .text18 {
   position: absolute;
   visibility: hidden;
-  color: red;
+  color: #3E8E41;
   margin-top: 2950px;
-  margin-left: 910.12px;
+  margin-left: 910.12px;z-index: 10;
 }
 
 .box:hover {
