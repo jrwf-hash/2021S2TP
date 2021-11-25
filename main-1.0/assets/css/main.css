@@ -193,20 +193,14 @@ body {
   color: #666;
   line-height: 25px;
   width: 700px;
+  text-align: center;
 }
 
-.pop-layer .btn-r {
-  width: 100%;
-  margin: 10px 0 20px;
-  padding-top: 10px;
-  /* border-top: 1px solid #DDD; */
-  text-align: right;
-}
 
 /*팝업 레이어 창 크기*/
 .pop-layer {
   display: none;
-  position: absolute;
+  position: fixed;
   top: 50%;
   left: 50%;
   width: 1000px;
@@ -252,6 +246,15 @@ a.btn-layerClose {
   color: #fff;
   line-height: 25px;
 }
+.pop-layer .btn-r {
+   position: relative;
+   left: 7.5%;
+   width: 200px;
+   margin: 10px 0 20px;
+   padding-top: 10px;
+   /* border-top: 1px solid #DDD; */
+   text-align: right;
+}
 
 a.btn-layerClose:hover {
   border: 1px solid #091940;
@@ -260,8 +263,8 @@ a.btn-layerClose:hover {
 }
 
 #picc img {
-  width: 700px;
-  height: auto;
+  width: 400px;
+  height: 400px;
 }
 
 #picc .img {
