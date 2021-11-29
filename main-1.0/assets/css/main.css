@@ -284,6 +284,7 @@ a.btn-layerClose:hover {
   position: absolute;
   visibility: hidden;
   color: #3E8E41;
+    font-weight: bold;
   margin-top: 450px;
   z-index: 10;
 }
@@ -291,6 +292,7 @@ a.btn-layerClose:hover {
 .text2 {
   position: absolute;
   visibility: hidden;
+    font-weight: bold;
   color: #3E8E41;
   margin-top: 450px;
   margin-left: 455.06px;
@@ -300,6 +302,7 @@ a.btn-layerClose:hover {
 .text3 {
   position: absolute;
   visibility: hidden;
+    font-weight: bold;
   color: #3E8E41;
   margin-top: 450px;
   margin-left: 910.12px;
@@ -311,6 +314,7 @@ a.btn-layerClose:hover {
   visibility: hidden;
   color: #3E8E41;
   margin-top: 950px;
+    font-weight: bold;
 z-index: 10;
 }
 
@@ -318,6 +322,7 @@ z-index: 10;
   position: absolute;
   visibility: hidden;
   color: #3E8E41;
+    font-weight: bold;
 margin-top: 950px;
   margin-left: 455.06px;
   z-index: 10;
@@ -327,6 +332,7 @@ margin-top: 950px;
   position: absolute;
   visibility: hidden;
   color: #3E8E41;
+    font-weight: bold;
   margin-top: 950px;
   margin-left: 910.12px;z-index: 10;
 }
@@ -334,6 +340,7 @@ margin-top: 950px;
 .text7 {
   position: absolute;
   visibility: hidden;
+    font-weight: bold;
   color: #3E8E41;
   margin-top: 1450px;z-index: 10;
 
@@ -344,12 +351,14 @@ margin-top: 950px;
   visibility: hidden;
   color: #3E8E41;
   margin-top: 1450px;
+    font-weight: bold;
   margin-left: 455.06px;z-index: 10;
 }
 
 .text9 {
   position: absolute;
   visibility: hidden;
+    font-weight: bold;
   color: #3E8E41;
   margin-top: 1450px;
   margin-left: 910.12px;z-index: 10;
@@ -358,6 +367,7 @@ margin-top: 950px;
 .text10 {
   position: absolute;
   visibility: hidden;
+    font-weight: bold;
   color: #3E8E41;
   margin-top: 1950px;z-index: 10;
 
@@ -367,6 +377,7 @@ margin-top: 950px;
   position: absolute;
   visibility: hidden;
   color: #3E8E41;
+    font-weight: bold;
   margin-top: 1950px;
   margin-left: 455.06px;z-index: 10;
 }
@@ -374,6 +385,7 @@ margin-top: 950px;
 .text12 {
   position: absolute;
   visibility: hidden;
+    font-weight: bold;
   color: #3E8E41;
   margin-top: 1950px;
 margin-left: 910.12px;z-index: 10;
@@ -383,6 +395,7 @@ margin-left: 910.12px;z-index: 10;
   position: absolute;
   visibility: hidden;
   color: #3E8E41;
+    font-weight: bold;
   margin-top: 2450px;z-index: 10;
 
 }
@@ -391,6 +404,7 @@ margin-left: 910.12px;z-index: 10;
   position: absolute;
   visibility: hidden;
   color: #3E8E41;
+    font-weight: bold;
   margin-top: 2450px;
   margin-left: 455.06px;z-index: 10;
 }
@@ -399,6 +413,7 @@ margin-left: 910.12px;z-index: 10;
   position: absolute;
   visibility: hidden;
   color: #3E8E41;
+    font-weight: bold;
   margin-top: 2450px;
   margin-left: 910.12px;z-index: 10;
 }
@@ -407,6 +422,7 @@ margin-left: 910.12px;z-index: 10;
   position: absolute;
   visibility: hidden;
   color: #3E8E41;
+    font-weight: bold;
   margin-top: 2950px;z-index: 10;
 
 }
@@ -415,6 +431,7 @@ margin-left: 910.12px;z-index: 10;
   position: absolute;
   visibility: hidden;
   color: #3E8E41;
+    font-weight: bold;
   margin-top: 2950px;
   margin-left: 455.06px;z-index: 10;
 }
@@ -423,12 +440,13 @@ margin-left: 910.12px;z-index: 10;
   position: absolute;
   visibility: hidden;
   color: #3E8E41;
+  font-weight: bold;
   margin-top: 2950px;
   margin-left: 910.12px;z-index: 10;
 }
 
 .box:hover {
-  opacity: 0.7;
+  opacity: 0.9;
 }
 
 .box:hover .text {
