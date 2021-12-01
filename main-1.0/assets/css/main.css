@@ -43,6 +43,7 @@ body {
 
 .filter a {
   margin-top: -60px;
+  margin-left: 5px;
   flex-shrink: 0;
   padding: 10px 20px;
   color: #ffffff;
